@@ -18,7 +18,7 @@ int main(void)
 				putchar('0' + i); /* Imprime el primer dígito */
 				putchar('0' + j); /* Imprime el segundo dígito */
 				putchar('0' + k); /* Imprime el tercer dígito */
-				if (i != 7 || j != 8 || k != 9) /* Verifica si es la última combinación */
+				if (i != 7 || j != 8 || k != 9) /* Vlda la ultma */
 				{
 					putchar(','); /* Imprime la coma */
 					putchar(' '); /* Imprime el espacio */
