@@ -7,31 +7,24 @@
 */
 void times_table(void)
 {
-	int row, col, result;
+	int i, j;
 
-	for (row = 0; row < 10; row++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (col = 0; col < 10; col++)
+		for (j = 0; j <= 9; j++)
 		{
-			result = row * col;
-			if (col != 0)  /* Add a space bf every num except the first one */
-			{
-				_putchar(' ');
-			}
-			if (result < 10)
-			{
-				_putchar(result + '0');
-			}
-			else
-			{
-				_putchar(result / 10 + '0');  /* Print the tens place */
-				_putchar(result % 10 + '0');  /* Print the ones place */
-			}
-			if (col != 9)  /* Avoid comma space af the last num in the row */
+			int product = i * j;
+
+			if (j != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
+				if (product < 10)
+					_putchar(' ');
 			}
+			if (product >= 10)
+				_putchar((product / 10) + '0');
+			_putchar((product % 10) + '0');
 		}
 		_putchar('\n');
 	}
