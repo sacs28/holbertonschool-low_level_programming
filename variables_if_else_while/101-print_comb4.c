@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i, j, k;
-	
+
 	for (i = 0; i <= 7; i++) /* Primer dígito */
 	{
 		for (j = i + 1; j <= 8; j++) /* Segundo dígito */
