@@ -7,11 +7,7 @@
  *
  * Return: 1 (indicates error according to the requirement)
  */
-int main(void)
-{
-char msg[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-
-write(2, msg, sizeof(msg) - 1);
-
-return (1);
+int main(void){
+fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stderr);
+return 1;
 }
