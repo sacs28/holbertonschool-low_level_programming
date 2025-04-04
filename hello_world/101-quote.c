@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - Print a message to standard error
+ * main: - print a message followed by a newline, to standard error
  *
- * Description: Write a C program that prints exactly "a text"
+ * Description:  and that piece of art is useful" - Dora Korpar, 2015-10-19
  *
- * Return: 1 (indicates error according to the requirement)
+ * Return: 1
  */
 int main(void){
 fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stderr);
