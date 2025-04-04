@@ -3,8 +3,8 @@
 /**
  * main - Print a message to standard error
  *
- * Description: Write a C program that prints exactly "a text" followed by a new line, to the standard error
- * 
+ * Description: Write a C program that prints exactly "a text"
+ *
  * Return: 1 (indicates error according to the requirement)
  */
 int main(void)
