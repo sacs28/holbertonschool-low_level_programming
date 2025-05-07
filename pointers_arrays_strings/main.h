@@ -1,18 +1,31 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-void reset_to_98(int *n);
-void swap_int(int *a, int *b);
-int _strlen(char *s);
-void _puts(char *str);
-void print_rev(char *s);
-void rev_string(char *s);
-void puts2(char *str);
-void puts_half(char *str);
-void print_array(int *a, int n);
-char *_strcpy(char *dest, char *src);
-int _atoi(char *s);
+void reset_to_98(int *);
+void swap_int(int *, int *);
+int _strlen(char *);
+void _puts(char *);
+void print_rev(char *);
+void rev_string(char *);
+void puts2(char *);
+void puts_half(char *);
+void print_array(int *, int );
+char *_strcpy(char *, char *);
+int _atoi(char *);
 char *cap_string(char *);
-int _putchar(char c);
+int _putchar(char );
+char *_strcat(char *, char *);
+char *_strncat(char *, char *, int );
+char *_strncpy(char *, char *, int );
+int _strcmp(char *, char *);
+void reverse_array(int *, int );
+char *string_toupper(char *);
+char *string_toupper(char *str);
+char *cap_string(char *);
+char *leet(char *);
+char *rot13(char *);
+void print_number(int );
+char *infinite_add(char *, char *, char *, int );
+void print_buffer(char *, int );
 
-#endif/** MAIN_H*/
+#endif/** MAIN_H */
