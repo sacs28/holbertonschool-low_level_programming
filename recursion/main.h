@@ -3,5 +3,6 @@
 
 int _putchar(char);
 void _puts_recursion(char *);
+int _strlen_recursion(char *);
 
 #endif/** MAIN_H */
