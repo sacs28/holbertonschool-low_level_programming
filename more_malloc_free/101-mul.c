@@ -19,7 +19,7 @@ int is_digit(char *str)
 	while (*str)
 	{
 		if (!isdigit(*str))
-		return (0);
+			return (0);
 		str++;
 	}
 	return (1);
@@ -77,17 +77,17 @@ char *finalize_result(int *result, int len)
 	char *final;
 
 	while (i < len && result[i] == 0)
-	i++;
+		i++;
 
 	if (i == len)
-	return (strdup("0"));
+		return (strdup("0"));
 
 	final = malloc((len - i + 1) * sizeof(char));
 	if (!final)
-	return (NULL);
+		return (NULL);
 
 	for (j = 0; i < len; i++, j++)
-	final[j] = result[i] + '0';
+		final[j] = result[i] + '0';
 	final[j] = '\0';
 
 	return (final);
@@ -106,7 +106,7 @@ char *multiply(char *num1, char *num2)
 	char *final;
 
 	if (!result)
-	return (NULL);
+		return (NULL);
 
 	perform_multiplication(num1, num2, result);
 	final = finalize_result(result, len);
@@ -143,5 +143,6 @@ int main(int argc, char *argv[])
 	}
 	printf("%s\n", result);
 	free(result);
+
 	return (0);
 }
